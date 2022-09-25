@@ -1,0 +1,25 @@
+.timerpage {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: top;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+.timer-container {
+    background-color: #F9F9F9;
+    width: 20vw;
+    height: 15vw;
+    padding: 2rem 6rem;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 1rem -0.7rem rgb(0,0,0,0.4);
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin: 20px;
+    width: 27.4vw;
+    text-align: start;
+}
