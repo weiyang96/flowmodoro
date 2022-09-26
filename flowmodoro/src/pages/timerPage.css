@@ -1,13 +1,17 @@
 .timerpage {
+    box-sizing: border-box;
     display: flex;
     height: 100vh;
     align-items: center;
     justify-content: top;
     flex-direction: column;
-    margin-top: 5%;
+    padding-top: 7%;
 }
 
 .timer-container {
+    display:flex;
+    align-items: center;
+    justify-content: center;
     background-color: #F9F9F9;
     width: 20vw;
     height: 15vw;
