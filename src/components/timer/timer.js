@@ -10,10 +10,10 @@ function Timer() {
     const [hours, setHours] = useState(0);
     const [isActive, setIsActive] = useState(false);
     const [rounds, setRounds] = useState(1)
+    const [breakTime, setBreakTime] = useState(0)
 
     let timer;
     let totalTimeInSeconds = 0;
-    let breakTime = 0;
 
     const sound = new Audio(Click)
     const ring = new Audio(Ring)
@@ -24,19 +24,22 @@ function Timer() {
         setIsActive(!isActive)
         if (isActive) {
             setRounds(rounds + 1)
+            setBreakTime(0)
         }
         if (totalTimeInSeconds > 0) {
-            breakTime = Math.floor(totalTimeInSeconds / 5)
-            console.log(breakTime)
-            let breakHours = Math.floor(breakTime / 3600)
-            let breakMinutes = Math.floor((breakTime - breakHours * 3600) / 60)
-            let breakSeconds = Math.floor(breakTime - breakHours * 3600 - breakMinutes * 60)
+            let innerBreakTime = Math.floor(totalTimeInSeconds / 5)
+            setBreakTime(innerBreakTime)
+            console.log(innerBreakTime)
+            let breakHours = Math.floor(innerBreakTime / 3600)
+            let breakMinutes = Math.floor((innerBreakTime - breakHours * 3600) / 60)
+            let breakSeconds = Math.floor(innerBreakTime - breakHours * 3600 - breakMinutes * 60)
             setHours(breakHours)
             setMinutes(breakMinutes)
             setSeconds(breakSeconds)
         }
     }
 
+    console.log("outside", breakTime)
     useEffect (() => {
         if (isActive) {
             timer = setInterval(() => {
@@ -60,10 +63,9 @@ function Timer() {
             if (seconds > 0) {
             timer = setInterval(() => {
                 setSeconds(seconds - 1)
-                breakTime -= 1
-                console.log(breakTime)
-
-                if (breakTime <= 0) {
+                setBreakTime(breakTime - 1)
+                console.log("ring", breakTime)
+                if (breakTime === 1) {
                     ring.play()
                 }
 
