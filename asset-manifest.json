@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/flowmodoro/static/css/main.fe639eeb.css",
+    "main.js": "/flowmodoro/static/js/main.cd8fb9c5.js",
+    "static/media/ring.mp3": "/flowmodoro/static/media/ring.b1616f7632e019c1fc61.mp3",
+    "static/media/click.mp3": "/flowmodoro/static/media/click.8a763dc94dd8642a3eed.mp3",
+    "index.html": "/flowmodoro/index.html",
+    "main.fe639eeb.css.map": "/flowmodoro/static/css/main.fe639eeb.css.map",
+    "main.cd8fb9c5.js.map": "/flowmodoro/static/js/main.cd8fb9c5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fe639eeb.css",
+    "static/js/main.cd8fb9c5.js"
+  ]
+}
