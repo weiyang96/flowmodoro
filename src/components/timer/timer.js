@@ -60,7 +60,7 @@ function Timer() {
             return ()=> clearInterval(timer)
         }
         else{
-            if (seconds > 0) {
+            if (seconds > 0 || (hours > 0) || (minutes > 0)) {
             timer = setInterval(() => {
                 setSeconds(seconds - 1)
                 setBreakTime(breakTime - 1)
@@ -74,8 +74,10 @@ function Timer() {
                     setMinutes(59)
                     setSeconds(59)
                 }
-
                 else if (minutes >= 1 && seconds === 0) {
+
+                    console.log(minutes)
+                    console.log(seconds)
                     setMinutes(minutes - 1)
                     setSeconds(59)
                 }
