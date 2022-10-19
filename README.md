@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+<h1>Flowmodoro</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<a href="https://weiyang96.github.io/flowmodoro/"><img width="600" alt="image" src="https://user-images.githubusercontent.com/50702871/196701051-c802e430-9775-4a46-bd17-2a71eb10663a.png"></a>
 
-## Available Scripts
+<h3>Description</h3>
+Flowmodoro - a reverse pomodoro timer, which instead of counting down the timer and having a short/long break, we count up the timer and divide the total time by 5 to be counted as the break time. 
 
-In the project directory, you can run:
+<h3>Benefits of Flowmodoro vs Pomodoro</h3>
+- Beginners might not be able to focus for a full 25 minutes. Flowmodoro allows flexibility.<br>
+- The longer you focus the longer the break time - This can be an incentive to stay focus.<br>
+- Users can keep track of how long they can focus for and try to improve it every round.
 
-### `npm start`
+<h3>Usage</h3>
+<img width="480" alt="image" src="https://user-images.githubusercontent.com/50702871/196706289-42eb1661-0101-4824-b148-c554e708862e.png">
+<p>Click on start to begin timer</p>
+<img width="480" alt="image" src="https://user-images.githubusercontent.com/50702871/196707524-f69f7e42-8b41-441b-9742-8d9298e325e9.png">
+<p>Click on break to stop timer and begin break timer</p>
+<img width="480" alt="image" src="https://user-images.githubusercontent.com/50702871/196707043-8d7cd4a9-9189-4b68-a3dc-2891193124ee.png">
+<p>Break time will be stop time divide by 5</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<h3>Future plans</h3>
+- To allow user to keep track of their focus timings. <br>
+- To implement a graph chart to allow user to view how has their focus improve/deprove over time<br>
+- Allow user to save data tied to their login
